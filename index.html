@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Music Player</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1db954, #191414);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            width: 350px;
+        }
+        h1 { font-size: 24px; margin-bottom: 20px; }
+        .song-info { margin-bottom: 20px; color: #b3b3b3; }
+        audio {
+            width: 100%;
+            filter: sepia(20%) saturate(70%) grayscale(1) contrast(99) invert(1); /* স্টাইলিশ প্লেয়ারের জন্য */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>আমার প্লেলিস্ট 🎧</h1>
+        <div class="song-info">
+            <p id="songName">গান: আপনার পছন্দের গান</p>
+        </div>
+
+        <audio controls id="audioPlayer">
+            <source src="song.mp3" type="audio/mpeg">
+            আপনার ব্রাউজারটি অডিও সাপোর্ট করে না।
+        </audio>
+    </div>
+
+</body>
+</html>
